@@ -11,8 +11,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{8EE5B9D3-A91F-4E8B-86F6-25832E04915B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PibNP.Domain", "src\PibNP.Domain\PibNP.Domain.csproj", "{D766F4F0-0AB1-4E75-A669-62F10ECFBDC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Test", "5 - Test", "{9BD3C246-9357-4CEB-B27E-F5304F2EC443}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D766F4F0-0AB1-4E75-A669-62F10ECFBDC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D766F4F0-0AB1-4E75-A669-62F10ECFBDC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D766F4F0-0AB1-4E75-A669-62F10ECFBDC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D766F4F0-0AB1-4E75-A669-62F10ECFBDC8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D766F4F0-0AB1-4E75-A669-62F10ECFBDC8} = {540C6894-525E-4219-B25A-07B0FB36CF62}
 	EndGlobalSection
 EndGlobal
