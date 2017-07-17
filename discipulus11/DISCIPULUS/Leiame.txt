@@ -1,0 +1,42 @@
+
+DISCIPULUS - Software de Cadastro de Membros e Congregações
+===========================================================
+
+AUTORIA
+
+Este software foi desenvolvido como parte de trabalhos acadêmicos, pelo autor, Vandro Jamur Wolf Aurélio, durante sua jornada acadêmica. Sua finalidade é ajudar as pequenas congregações cristãs a organizarem seu cadastro de membros e congregações.
+
+DIREITOS AUTORAIS
+
+Todos os direitos autorais sobre este produto são unicamente de seu autor.
+
+LICENÇA DE USO
+
+O uso deste software é totalmente GRATUITO e SEM LIMITAÇÕES. Não é permitida a sua venda sob hipótese alguma.
+
+SUPORTE
+
+Por ser um software gratuito, não existe nenhum suporte para o seu uso.
+
+INSTALAÇÃO
+
+1 - Descompacte o arquivo .ZIP em uma pasta de seu computador.
+2 - Execute o arquivo Setup.exe.
+3 - Siga os passos da instalação.
+
+OBSERVAÇÕES GERAIS
+
+Este é um software simples, para uso de pequenas congregações. Funciona em rede porém não é recomendado para vários usuários conectados simultaneamente. Consulte a AJUDA para maiores informações sobre a sua utilização.
+
+REQUISITOS DE SISTEMA
+
+Windows XP (ou superior) ou Windows 9x com Microsoft Access instalado.
+Processador Pentium ou equivalente, 500 Mhz ou mais.
+
+CONTATOS
+
+Se você gostou deste programa e ele foi útil para a sua congregação, sinta-se livre para fazer uma contribuição ao seu autor.
+
+Contatos com o autor pelo e-mail: vandrowolf@gmail.com
+
+Site oficial: www.discipulus.com.br
