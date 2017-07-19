@@ -5,36 +5,55 @@ using System.Text.RegularExpressions;
 
 namespace PibNP.Domain.Membro.ValueObjects
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Email
     {
         private const string EMAIL_PATTERN = @"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$";
-            //@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$";
-            //@"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$";//@"^(?("")("".+?""@)|(([0-9a-zA-Z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-zA-Z])@))(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,6}))$";
-        private const int EMAIL_MAX_LENGTH = 254;
-        private const int EMAIL_MIN_LENGTH = 5;
+        public const int EMAIL_MAX_LENGTH = 100;
+        public const int EMAIL_MIN_LENGTH = 5;
 
         #region Properties
         public string Value { get; private set; }
 
         public bool Valido { get; private set; }
+
+        public string Mensagem { get; private set; }
         #endregion
 
-        public Email(string email)
+        private Email()
         {
-            if (!Validar(email))
-            {
-                Valido = false;
-            }
-            else
-            {
-                Valido = true;
-                this.Value = email;
-            }
+            Valido = false;
+            Value = null;
+            Mensagem = null;
         }
 
-        private bool Validar(string email)
+        public Email(string email) : this()
         {
-            return Regex.IsMatch(email, EMAIL_PATTERN);
+            Validar(email);
+        }
+
+        private void Validar(string email)
+        {
+            if (email.Length > EMAIL_MAX_LENGTH)
+                this.Mensagem = $"E-mail: {email} informado ultrapassou a quantidade permitida de {EMAIL_MAX_LENGTH}";
+            else if (email.Length < EMAIL_MIN_LENGTH)
+                this.Mensagem = $"E-mail: {email} informado não possui a quantidade permitida de {EMAIL_MIN_LENGTH}";
+            else
+            {
+                var result = Regex.IsMatch(email, EMAIL_PATTERN);
+
+                if (!result)
+                {
+                    this.Mensagem = "E-mail inváido";
+                }
+                else
+                {
+                    this.Valido = true;
+                    this.Value = email;
+                }
+            }
         }
     }
 }

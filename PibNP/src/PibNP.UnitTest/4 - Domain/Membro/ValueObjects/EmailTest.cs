@@ -53,12 +53,35 @@ namespace PibNP.UnitTest._4___Domain_Membro_ValueObjects
         [InlineData("artur.ribeiro@.xx")]
         [InlineData("artur.ribeiro@gmail")]
         [InlineData("nlalinha@jjjjj")]
-        public void EmailsInvalidos(string emailInformado)
+        public void EmailInvalidos(string emailInformado)
         {
             var email = new Email(emailInformado);
 
             Assert.Equal(email.Valido, false);
             Assert.Equal(email.Value, null);
+        }
+
+        [Theory]
+        [InlineData("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@hostname.co")]
+        public void EmailQuantidadeMaximaInvalido(string emailInformado)
+        {
+            var email = new Email(emailInformado);
+
+            Assert.Equal(email.Valido, false);
+            Assert.Equal(email.Value, null);
+            Assert.Equal(email.Mensagem, $"E-mail: {emailInformado} informado ultrapassou a quantidade permitida de {Email.EMAIL_MAX_LENGTH}");
+        }
+
+
+        [Theory]
+        [InlineData("a@a")]
+        public void EmailQuantidadeMinimaInvalido(string emailInformado)
+        {
+            var email = new Email(emailInformado);
+
+            Assert.Equal(email.Valido, false);
+            Assert.Equal(email.Value, null);
+            Assert.Equal(email.Mensagem, $"E-mail: {emailInformado} informado não possui a quantidade permitida de {Email.EMAIL_MIN_LENGTH}");
         }
     }
 }
