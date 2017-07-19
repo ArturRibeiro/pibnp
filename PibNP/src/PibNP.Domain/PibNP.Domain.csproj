@@ -4,4 +4,13 @@
     <TargetFramework>netstandard1.5</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Membro\Events\" />
+    <Folder Include="Membro\Handlers\" />
+    <Folder Include="Membro\Interfaces\" />
+    <Folder Include="Membro\Validations\" />
+    <Folder Include="Membro\Specifications\" />
+    <Folder Include="Membro\Services\" />
+  </ItemGroup>
+
 </Project>

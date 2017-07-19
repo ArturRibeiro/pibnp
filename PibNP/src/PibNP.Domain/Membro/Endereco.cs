@@ -1,4 +1,4 @@
-﻿namespace PibNP.Domain.Person
+﻿namespace PibNP.Domain.Membro
 {
     public class Endereco
     {

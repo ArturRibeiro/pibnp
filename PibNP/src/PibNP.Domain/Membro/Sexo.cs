@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PibNP.Domain.Person
+namespace PibNP.Domain.Membro
 {
     public enum Sexo : short
     {
