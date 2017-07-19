@@ -7,7 +7,9 @@ namespace PibNP.Domain.Membro.ValueObjects
 {
     public class Email
     {
-        private const string EMAIL_PATTERN = @"^(?("")("".+?""@)|(([0-9a-zA-Z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-zA-Z])@))(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,6}))$";
+        private const string EMAIL_PATTERN = @"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$";
+            //@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$";
+            //@"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$";//@"^(?("")("".+?""@)|(([0-9a-zA-Z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-zA-Z])@))(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,6}))$";
         private const int EMAIL_MAX_LENGTH = 254;
         private const int EMAIL_MIN_LENGTH = 5;
 
@@ -19,7 +21,7 @@ namespace PibNP.Domain.Membro.ValueObjects
 
         public Email(string email)
         {
-            if (Validar(email))
+            if (!Validar(email))
             {
                 Valido = false;
             }

@@ -1,4 +1,5 @@
-﻿using PibNP.Domain.Membro.ValueObjects;
+﻿using PibNP.Domain.Enderecos;
+using PibNP.Domain.Membro.ValueObjects;
 using System;
 
 namespace PibNP.Domain.Membro
@@ -29,7 +30,17 @@ namespace PibNP.Domain.Membro
 
         public Rg Rg { get; private set; }
 
-        public Endereco Endereco { get; private set; }
+        private Endereco endereco;
+
+        public Endereco GetEndereco()
+        {
+            return endereco;
+        }
+
+        private void SetEndereco(Endereco value)
+        {
+            endereco = value;
+        }
 
         public string Foto { get; private set; }
 
@@ -50,7 +61,7 @@ namespace PibNP.Domain.Membro
             this.Status = EstadoCivil.Solteiro;
             this.Cpf = null;
             this.Rg = null;
-            this.Endereco = null;
+            this.SetEndereco(null);
         }
 
         private Membro(string nome, Email email, DateTime aniversario, DateTime batismo, Telefone Residencial, Telefone Celular, Telefone Comercial, Sexo Sexo, EstadoCivil Status, Cpf Cpf, Rg Rg, Endereco Endereco) : this()
