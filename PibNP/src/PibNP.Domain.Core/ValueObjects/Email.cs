@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace PibNP.Domain.Membro.ValueObjects
+namespace PibNP.Domain.Core.ValueObjects
 {
     /// <summary>
     /// 

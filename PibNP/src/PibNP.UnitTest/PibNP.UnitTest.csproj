@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\PibNP.Domain.Core\PibNP.Domain.Core.csproj" />
     <ProjectReference Include="..\PibNP.Domain\PibNP.Domain.csproj" />
   </ItemGroup>
 

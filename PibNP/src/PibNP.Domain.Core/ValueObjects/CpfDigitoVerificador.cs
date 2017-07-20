@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PibNP.Domain.Membro.ValueObjects
+namespace PibNP.Domain.Core.ValueObjects
 {
     /// <summary>
     /// Uma fluent interface para o cálculo de dígito verificador

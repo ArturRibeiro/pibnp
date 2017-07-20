@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace PibNP.Domain.Membro.ValueObjects
+namespace PibNP.Domain.Core.ValueObjects
 {
     public class Cpf
     {

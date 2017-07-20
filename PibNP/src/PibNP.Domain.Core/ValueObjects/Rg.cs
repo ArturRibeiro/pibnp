@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace PibNP.Domain.Membro.ValueObjects
+﻿namespace PibNP.Domain.Core.ValueObjects
 {
-    public class Telefone
+    public class Rg
     {
         #region Properties
         public string Value { get; private set; }
@@ -12,20 +8,20 @@ namespace PibNP.Domain.Membro.ValueObjects
         public bool Valido { get; private set; }
         #endregion
 
-        public Telefone(string telefone)
+        public Rg(string rg)
         {
-            if (Validar(telefone))
+            if (Validar(rg))
             {
                 Valido = false;
             }
             else
             {
                 Valido = true;
-                this.Value = telefone;
+                this.Value = rg;
             }
         }
 
-        private bool Validar(string telefone)
+        private bool Validar(string cpf)
         {
             return false;
         }

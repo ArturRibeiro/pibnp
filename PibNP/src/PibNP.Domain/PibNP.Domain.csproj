@@ -5,12 +5,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Membro\ValueObjects\" />
+    <Folder Include="Organizacao\Events\" />
+    <Folder Include="Organizacao\Handlers\" />
+    <Folder Include="Organizacao\Interfaces\" />
+    <Folder Include="Organizacao\ValueObjects\" />
+    <Folder Include="Organizacao\Services\" />
+    <Folder Include="Organizacao\Specifications\" />
+    <Folder Include="Organizacao\Validations\" />
     <Folder Include="Membro\Events\" />
     <Folder Include="Membro\Handlers\" />
     <Folder Include="Membro\Interfaces\" />
     <Folder Include="Membro\Validations\" />
     <Folder Include="Membro\Specifications\" />
     <Folder Include="Membro\Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PibNP.Domain.Core\PibNP.Domain.Core.csproj" />
   </ItemGroup>
 
 </Project>

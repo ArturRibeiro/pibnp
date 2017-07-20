@@ -1,4 +1,4 @@
-﻿using PibNP.Domain.Membro.ValueObjects;
+﻿using PibNP.Domain.Core.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Text;

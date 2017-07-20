@@ -1,7 +1,4 @@
-﻿using PibNP.Domain.Membro.ValueObjects;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using PibNP.Domain.Core.ValueObjects;
 using Xunit;
 
 namespace PibNP.UnitTest._4___Domain.Membro.ValueObjects
