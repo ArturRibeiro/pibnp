@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using Xunit;
 
-namespace PibNP.UnitTest._4___Domain_Membro_ValueObjects
+namespace PibNP.UnitTest._4___Domain_Core_ValueObjects
 {
     public class EmailTest
     {

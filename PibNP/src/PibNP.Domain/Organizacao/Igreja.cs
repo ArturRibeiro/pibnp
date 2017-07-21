@@ -35,6 +35,14 @@ namespace PibNP.Domain.Organizacao
             this.Endereco = endereco;
         }
 
+        public Igreja(string nome, string foto, Email email, Telefone telefone) : this()
+        {
+            this.Nome = nome;
+            this.Foto = foto;
+            this.Email = email;
+            this.Telefone = telefone;
+        }
+
         #endregion
 
         #region Factor
@@ -43,6 +51,11 @@ namespace PibNP.Domain.Organizacao
             public static Igreja Create(string nome, string foto, Email email, Telefone telefone, IgrejaEndereco endereco)
             {
                 return new Igreja(nome, foto, email, telefone, endereco);
+            }
+
+            public static Igreja Create(string nome, string foto, Email email, Telefone telefone)
+            {
+                return new Igreja(nome, foto, email, telefone);
             }
         }
         #endregion

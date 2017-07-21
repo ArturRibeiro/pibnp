@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.5</TargetFramework>
+    <TargetFramework>netstandard1.6</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,6 +19,10 @@
     <Folder Include="Membro\Validations\" />
     <Folder Include="Membro\Specifications\" />
     <Folder Include="Membro\Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="7.1.0" />
   </ItemGroup>
 
   <ItemGroup>

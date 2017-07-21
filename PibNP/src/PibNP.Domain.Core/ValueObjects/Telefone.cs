@@ -27,7 +27,7 @@ namespace PibNP.Domain.Core.ValueObjects
 
         private bool Validar(string telefone)
         {
-            return false;
+            return !string.IsNullOrEmpty(telefone);
         }
     }
 }

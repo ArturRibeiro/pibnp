@@ -8,65 +8,8 @@ namespace PibNP.UnitTest._4___Domain_Membro
 {
     public class MembroTest
     {
-
-        [Theory]
-        [InlineData("Artur Araújo Santos Ribeiro", "", "arturrj@gmail.com", "552127620534", "55212987413978", "552127620534", "09436015763", "123456789")]
-        public void MembroIqual(string nome, string foto, string email, string telResidencial, string telMovel, string telComercial, string cpf, string rg)
-        {
-            var membro1 = Membro.Factor.Create(nome
-                , foto
-                , new Email(email)
-                , DateTime.Now
-                , DateTime.Now
-                , new Telefone(telResidencial)
-                , new Telefone(telMovel)
-                , new Telefone(telComercial)
-                , Sexo.Masculino
-                , EstadoCivil.Casado
-                , new Cpf(cpf)
-                , new Rg(rg));
-
-            var membro2 = Membro.Factor.Create(nome
-                , foto
-                , new Email(email)
-                , DateTime.Now
-                , DateTime.Now
-                , new Telefone(telResidencial)
-                , new Telefone(telMovel)
-                , new Telefone(telComercial)
-                , Sexo.Masculino
-                , EstadoCivil.Casado
-                , new Cpf(cpf)
-                , new Rg(rg));
-
-            Assert.Equal(membro1.Id, membro2.Id);
-            Assert.Equal(membro1, membro2);
-        }
-
-        [Theory]
-        [InlineData("Artur Araújo Santos RibeiroArtur Araújo Santos RibeiroArtur Araújo Santos RibeiroArtur Araújo Santos RibeiroArtur Araújo Santos RibeiroArtur Araújo Santos RibeiroArtur Araújo Santos Ribeiro", "", "arturrj@gmail.com", "552127620534", "55212987413978", "552127620534", "09436015763", "123456789")]
-        public void MembroNomeComTamnahoMaiorQueOPermitido(string nome, string foto, string email, string telResidencial, string telMovel, string telComercial, string cpf, string rg)
-        {
-            var membro = Membro.Factor.Create(nome
-                , foto
-                , new Email(email)
-                , DateTime.Now
-                , DateTime.Now
-                , new Telefone(telResidencial)
-                , new Telefone(telMovel)
-                , new Telefone(telComercial)
-                , Sexo.Masculino
-                , EstadoCivil.Casado
-                , new Cpf(cpf)
-                , new Rg(rg));
-
-            membro.EhValido();
-
-            //Assert.Equal(membro1.Id, membro2.Id);
-        }
-
         [Fact]
-        public void CriarMembro()
+        public void Criar_Membro()
         {
             var nome = "Artur Araújo Santos Ribeiro";
             var email = new Email("arturrj@gmail.com");

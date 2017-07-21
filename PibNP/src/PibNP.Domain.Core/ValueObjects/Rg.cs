@@ -23,7 +23,7 @@
 
         private bool Validar(string cpf)
         {
-            return false;
+            return !string.IsNullOrEmpty(cpf);
         }
     }
 }

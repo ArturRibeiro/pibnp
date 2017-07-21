@@ -1,10 +1,12 @@
-﻿using PibNP.Domain.Core.ValueObjects;
+﻿using FluentValidation;
+using PibNP.Domain.Core.Models;
+using PibNP.Domain.Core.ValueObjects;
 using PibNP.Domain.Enderecos;
 using System;
 
 namespace PibNP.Domain.Membro
 {
-    public class Membro
+    public class Membro : Entity<Membro>
     {
         #region Properties
 
@@ -37,7 +39,7 @@ namespace PibNP.Domain.Membro
         public Rg Rg { get; private set; }
 
         public Endereco Endereco { get; private set; }
-        
+
         #endregion
 
         #region Constructors
@@ -87,7 +89,7 @@ namespace PibNP.Domain.Membro
             this.Sexo = sexo;
             this.EstadoCivil = estadoCivil;
             this.Cpf = cpf;
-            this.Rg = rg;            
+            this.Rg = rg;
         }
 
         public void Inativar()
@@ -106,6 +108,17 @@ namespace PibNP.Domain.Membro
         public void InformarEndereco(Endereco endereco)
         {
             this.Endereco = endereco;
+        }
+
+        public override bool EhValido()
+        {
+            RuleFor(x => x.Nome)
+                .NotEmpty().WithMessage("O nome não foi informado.")
+                .Length(2, 150).WithMessage("O número de caracter é maior que o permitido.");
+
+            ValidationResult = Validate(this);
+
+            return ValidationResult.IsValid;
         }
 
 
