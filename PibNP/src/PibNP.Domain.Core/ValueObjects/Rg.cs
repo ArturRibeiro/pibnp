@@ -1,4 +1,4 @@
-﻿namespace PibNP.Domain.Core.ValueObjects
+﻿namespace Pib.NP.Domain.Core.ValueObjects
 {
     public class Rg
     {

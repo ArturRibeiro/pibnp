@@ -1,9 +1,9 @@
-﻿using PibNP.Domain.Core.ValueObjects;
+﻿using Pib.NP.Domain.Core.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace PibNP.Domain.Organizacao
+namespace Pib.NP.Domain.Organizacao
 {
     public class Igreja
     {

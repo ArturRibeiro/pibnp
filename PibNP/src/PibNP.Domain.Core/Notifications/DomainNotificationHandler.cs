@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using PibNP.Domain.Core.Events;
+using Pib.NP.Domain.Core.Events;
 
-namespace PibNP.Domain.Core.Notifications
+namespace Pib.NP.Domain.Core.Notifications
 {
     public class DomainNotificationHandler : IDomainNotificationHandler<DomainNotification>
     {

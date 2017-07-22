@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PibNP.Domain.Core.Events
+namespace Pib.NP.Domain.Core.Events
 {
     public interface IHandler<in T> where T : Message
     {

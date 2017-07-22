@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PibNP.Domain.Core.ValueObjects
+namespace Pib.NP.Domain.Core.ValueObjects
 {
     public class Telefone
     {

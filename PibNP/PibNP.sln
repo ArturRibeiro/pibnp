@@ -11,24 +11,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Domain", "4 - Domain", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Infra", "5 - Infra", "{8EE5B9D3-A91F-4E8B-86F6-25832E04915B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PibNP.Domain", "src\PibNP.Domain\PibNP.Domain.csproj", "{D766F4F0-0AB1-4E75-A669-62F10ECFBDC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pib.NP.Domain", "src\PibNP.Domain\Pib.NP.Domain.csproj", "{D766F4F0-0AB1-4E75-A669-62F10ECFBDC8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Tests", "6 - Tests", "{9BD3C246-9357-4CEB-B27E-F5304F2EC443}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PibNP.Infra.IoC", "src\PibNP.Infra.IoC\PibNP.Infra.IoC.csproj", "{8BA19204-BCE0-42C1-B881-9406859B226F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pib.NP.Infra.IoC", "src\PibNP.Infra.IoC\Pib.NP.Infra.IoC.csproj", "{8BA19204-BCE0-42C1-B881-9406859B226F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7 - SharedKernel", "7 - SharedKernel", "{0BAD4659-03CC-4D49-A732-0EA4C7780B50}"
 	ProjectSection(SolutionItems) = preProject
 		leia.txt = leia.txt
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PibNP.Domain.Core", "src\PibNP.Domain.Core\PibNP.Domain.Core.csproj", "{F5EBAD09-63D6-4C18-83C4-3BE003FD99F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pib.NP.Domain.Core", "src\PibNP.Domain.Core\Pib.NP.Domain.Core.csproj", "{F5EBAD09-63D6-4C18-83C4-3BE003FD99F9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1 - Data", "5.1 - Data", "{17D6F1B1-ACE6-4DC8-848E-1C57E54F83CA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2 - CrossCutting", "5.2 - CrossCutting", "{6609E2D3-7E2F-43E0-A861-CED057B949F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PibNP.UnitTest", "src\PibNP.UnitTest\PibNP.UnitTest.csproj", "{77DD7F55-F430-4AA4-89A6-6AB79B8DD6E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pib.NP.UnitTest", "src\PibNP.UnitTest\Pib.NP.UnitTest.csproj", "{77DD7F55-F430-4AA4-89A6-6AB79B8DD6E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

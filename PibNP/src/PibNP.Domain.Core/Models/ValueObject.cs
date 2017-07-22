@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PibNP.Domain.Core.Models
+namespace Pib.NP.Domain.Core.Models
 {
     public abstract class ValueObject<T> where T : ValueObject<T>
     {

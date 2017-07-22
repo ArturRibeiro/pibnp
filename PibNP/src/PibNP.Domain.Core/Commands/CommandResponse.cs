@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PibNP.Domain.Core.Commands
+namespace Pib.NP.Domain.Core.Commands
 {
     public class CommandResponse
     {

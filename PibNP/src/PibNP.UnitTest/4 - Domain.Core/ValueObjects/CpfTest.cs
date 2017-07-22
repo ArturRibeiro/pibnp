@@ -1,7 +1,7 @@
-﻿using PibNP.Domain.Core.ValueObjects;
+﻿using Pib.NP.Domain.Core.ValueObjects;
 using Xunit;
 
-namespace PibNP.UnitTest._4___Domain_Core_ValueObjects
+namespace Pib.NP.UnitTest._4___Domain_Core_ValueObjects
 {
     public class CpfTest
     {

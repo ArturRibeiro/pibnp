@@ -1,10 +1,10 @@
 ﻿using FluentValidation;
-using PibNP.Domain.Core.Models;
-using PibNP.Domain.Core.ValueObjects;
-using PibNP.Domain.Enderecos;
+using Pib.NP.Domain.Core.Models;
+using Pib.NP.Domain.Core.ValueObjects;
+using Pib.NP.Domain.Enderecos;
 using System;
 
-namespace PibNP.Domain.Membro
+namespace Pib.NP.Domain.Membro
 {
     public class Membro : Entity<Membro>
     {

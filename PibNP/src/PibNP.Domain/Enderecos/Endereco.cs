@@ -1,4 +1,4 @@
-﻿namespace PibNP.Domain.Enderecos
+﻿namespace Pib.NP.Domain.Enderecos
 {
     public class Endereco
     {

@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace PibNP.Domain.Core.Models
+namespace Pib.NP.Domain.Core.Models
 {
     public abstract class Entity<T> : AbstractValidator<T> where T : Entity<T>
     {

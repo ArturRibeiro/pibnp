@@ -1,8 +1,8 @@
 ﻿using System;
 using FluentValidation.Results;
-using PibNP.Domain.Core.Events;
+using Pib.NP.Domain.Core.Events;
 
-namespace PibNP.Domain.Core.Commands
+namespace Pib.NP.Domain.Core.Commands
 {
     public abstract class Command : Message
     {

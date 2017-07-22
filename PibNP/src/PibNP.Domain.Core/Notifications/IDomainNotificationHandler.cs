@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using PibNP.Domain.Core.Events;
+using Pib.NP.Domain.Core.Events;
 
-namespace PibNP.Domain.Core.Notifications
+namespace Pib.NP.Domain.Core.Notifications
 {
     public interface IDomainNotificationHandler<T> : IHandler<T> where T : Message
     {

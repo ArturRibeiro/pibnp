@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PibNP.Infra.IoC
+namespace Pib.NP.Infra.IoC
 {
     public class Class1
     {

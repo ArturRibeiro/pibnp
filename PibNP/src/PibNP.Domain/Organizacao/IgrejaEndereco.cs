@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PibNP.Domain.Organizacao
+namespace Pib.NP.Domain.Organizacao
 {
     public class IgrejaEndereco
     {

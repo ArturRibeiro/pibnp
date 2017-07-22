@@ -1,4 +1,4 @@
-﻿namespace PibNP.Domain.Core.Events
+﻿namespace Pib.NP.Domain.Core.Events
 {
     public interface IEventStore
     {
