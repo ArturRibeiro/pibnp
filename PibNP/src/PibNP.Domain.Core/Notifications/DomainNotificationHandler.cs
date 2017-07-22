@@ -1,26 +1,27 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Pib.NP.Domain.Core.Events;
+using System;
 
 namespace Pib.NP.Domain.Core.Notifications
 {
-    public class DomainNotificationHandler : IDomainNotificationHandler<DomainNotification>
+    public class DomainNotificationHandler : IDomainNotificationHandler<DomainNotification>, IDisposable
     {
-        private List<DomainNotification> _notifications;
+        private List<DomainNotification> notifications;
 
         public DomainNotificationHandler()
         {
-            _notifications = new List<DomainNotification>();
+            notifications = new List<DomainNotification>();
         }
 
         public void Handle(DomainNotification message)
         {
-            _notifications.Add(message);
+            notifications.Add(message);
         }
 
         public List<DomainNotification> GetNotifications()
         {
-            return _notifications;
+            return notifications;
         }
 
         public bool HasNotifications()
@@ -30,7 +31,7 @@ namespace Pib.NP.Domain.Core.Notifications
 
         public void Dispose()
         {
-            _notifications = new List<DomainNotification>();
+            notifications = new List<DomainNotification>();
         }
     }
 }

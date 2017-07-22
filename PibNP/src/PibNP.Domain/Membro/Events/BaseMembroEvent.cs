@@ -1,12 +1,10 @@
-﻿using Pib.NP.Domain.Core.Commands;
+﻿using Pib.NP.Domain.Core.Events;
 using Pib.NP.Domain.Core.ValueObjects;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Pib.NP.Domain.Membro.Commands
+namespace Pib.NP.Domain.Membro.Events
 {
-    public abstract class BaseMembroCommand : Command
+    public abstract class BaseMembroEvent : Event
     {
         #region Properties
 

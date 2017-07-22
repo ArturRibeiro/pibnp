@@ -5,6 +5,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Membro\Handlers\**" />
+    <Compile Remove="Membro\Interfaces\**" />
+    <Compile Remove="Membro\Services\**" />
+    <Compile Remove="Membro\Specifications\**" />
+    <EmbeddedResource Remove="Membro\Handlers\**" />
+    <EmbeddedResource Remove="Membro\Interfaces\**" />
+    <EmbeddedResource Remove="Membro\Services\**" />
+    <EmbeddedResource Remove="Membro\Specifications\**" />
+    <None Remove="Membro\Handlers\**" />
+    <None Remove="Membro\Interfaces\**" />
+    <None Remove="Membro\Services\**" />
+    <None Remove="Membro\Specifications\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Membro\ValueObjects\" />
     <Folder Include="Organizacao\Events\" />
     <Folder Include="Organizacao\Handlers\" />
@@ -13,12 +28,7 @@
     <Folder Include="Organizacao\Services\" />
     <Folder Include="Organizacao\Specifications\" />
     <Folder Include="Organizacao\Validations\" />
-    <Folder Include="Membro\Events\" />
-    <Folder Include="Membro\Handlers\" />
-    <Folder Include="Membro\Interfaces\" />
     <Folder Include="Membro\Validations\" />
-    <Folder Include="Membro\Specifications\" />
-    <Folder Include="Membro\Services\" />
   </ItemGroup>
 
   <ItemGroup>

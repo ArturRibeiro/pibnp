@@ -12,6 +12,10 @@ namespace Pib.NP.Domain.Core.Commands
             Success = success;
         }
 
-        public bool Success { get; private set; }
+        public bool Success
+        {
+            get;
+            private set;
+        }
     }
 }

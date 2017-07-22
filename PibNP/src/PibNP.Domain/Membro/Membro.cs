@@ -59,7 +59,7 @@ namespace Pib.NP.Domain.Membro
             this.Rg = null;
         }
 
-        private Membro(string nome, string foto, Email email, DateTime aniversario, DateTime batismo, Telefone residencial, Telefone celular, Telefone comercial, Sexo sexo, EstadoCivil estadoCivil, Cpf cpf, Rg rg, Endereco endereco) : this()
+        private Membro(string nome, string foto, Email email, DateTime? aniversario, DateTime? batismo, Telefone residencial, Telefone celular, Telefone comercial, Sexo sexo, EstadoCivil estadoCivil, Cpf cpf, Rg rg, Endereco endereco) : this()
         {
             this.Nome = nome;
             this.Foto = foto;
@@ -76,7 +76,7 @@ namespace Pib.NP.Domain.Membro
             this.InformarEndereco(endereco);
         }
 
-        private Membro(string nome, string foto, Email email, DateTime aniversario, DateTime batismo, Telefone residencial, Telefone celular, Telefone comercial, Sexo sexo, EstadoCivil estadoCivil, Cpf cpf, Rg rg) : this()
+        private Membro(string nome, string foto, Email email, DateTime? aniversario, DateTime? batismo, Telefone residencial, Telefone celular, Telefone comercial, Sexo sexo, EstadoCivil estadoCivil, Cpf cpf, Rg rg) : this()
         {
             this.Nome = nome;
             this.Foto = foto;
@@ -128,12 +128,12 @@ namespace Pib.NP.Domain.Membro
 
         public static class Factor
         {
-            public static Membro Create(string nome, string foto, Email email, DateTime aniversario, DateTime batismo, Telefone residencial, Telefone celular, Telefone comercial, Sexo sexo, EstadoCivil status, Cpf cpf, Rg rg, Endereco endereco)
+            public static Membro Create(string nome, string foto, Email email, DateTime? aniversario, DateTime? batismo, Telefone residencial, Telefone celular, Telefone comercial, Sexo sexo, EstadoCivil status, Cpf cpf, Rg rg, Endereco endereco)
             {
                 return new Membro(nome, foto, email, aniversario, batismo, residencial, celular, comercial, sexo, status, cpf, rg, endereco);
             }
 
-            public static Membro Create(string nome, string foto, Email email, DateTime aniversario, DateTime batismo, Telefone residencial, Telefone celular, Telefone comercial, Sexo sexo, EstadoCivil status, Cpf cpf, Rg rg)
+            public static Membro Create(string nome, string foto, Email email, DateTime? aniversario, DateTime? batismo, Telefone residencial, Telefone celular, Telefone comercial, Sexo sexo, EstadoCivil status, Cpf cpf, Rg rg)
             {
                 return new Membro(nome, foto, email, aniversario, batismo, residencial, celular, comercial, sexo, status, cpf, rg);
             }

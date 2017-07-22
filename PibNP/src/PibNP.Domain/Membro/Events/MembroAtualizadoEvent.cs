@@ -3,12 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pib.NP.Domain.Membro.Commands
+namespace Pib.NP.Domain.Membro.Events
 {
-    public class RegistrarMembroCommand : BaseMembroCommand
+    public class MembroAtualizadoEvent : BaseMembroEvent
     {
-        public RegistrarMembroCommand(string nome, string foto, string email, DateTime aniversario, DateTime batismo, string residencial, string celular, string comercial, int sexo, int estadoCivil, string cpf, string rg)
+        public MembroAtualizadoEvent(Guid id, string nome, string foto, string email, DateTime aniversario, DateTime batismo, string residencial, string celular, string comercial, int sexo, int estadoCivil, string cpf, string rg)
         {
+            this.Id = id;
             this.Nome = nome;
             this.Foto = foto;
             this.Email = new Email(email);
@@ -21,11 +22,6 @@ namespace Pib.NP.Domain.Membro.Commands
             this.EstadoCivil = (EstadoCivil)estadoCivil;
             this.Cpf = new Cpf(cpf);
             this.Rg = new Rg(rg);
-        }
-
-        public override bool IsValid()
-        {
-            throw new NotImplementedException();
         }
     }
 }
